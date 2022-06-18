@@ -49,4 +49,4 @@ require("configs.filetree").config()
 require("configs.treesitter").config()
 require("configs.outlinetree").config()
 require("configs.startscreen").config()
-
+require("configs.formatter").config()

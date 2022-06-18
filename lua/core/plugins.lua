@@ -29,6 +29,7 @@ return require('packer').startup(function()
         'kyazdani42/nvim-tree.lua',
         requires = 'kyazdani42/nvim-web-devicons'
     }
+    use 'kevinhwang91/rnvimr'
 
     -- language
     use 'neovim/nvim-lspconfig'
@@ -66,5 +67,12 @@ return require('packer').startup(function()
 --    use '~/Developer/aleph-nvim'
     use 'p-z-l/aleph-nvim'
 
+    -- editor
+    use {
+	      'windwp/nvim-autopairs',
+        config = function() require('nvim-autopairs').setup {} end
+    }
+    use 'sbdchd/neoformat'
+    use 'mhartington/formatter.nvim'
 end)
 

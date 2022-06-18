@@ -12,12 +12,18 @@ local function maplua(key, txt)
     vim.api.nvim_set_keymap('n', key, ':lua '..txt..'<cr>', {noremap=true})
 end
 
-mapkey('i', '<C-w>', '<C-x><C-k>')
-
+-- editor mode
+--mapkey('i', '<C-w>', '<C-x><C-k>')
+mapkey('i', 'jk',    '<esc>')
+mapkey('i', '<c-h>', '<left>')
+mapkey('i', '<c-j>', '<down>')
+mapkey('i', '<c-k>', '<up>')
+mapkey('i', '<c-l>', '<right>')
 -- keymaps
 -- f: file tree
 mapcmd('<leader>ft', 'NvimTreeToggle')
 mapcmd('<leader>ff', 'NvimTreeFocus')
+mapcmd('<leader>fr', 'RnvimrToggle')
 -- y: telescope
 mapcmd('<leader>yo', "Telescope find_files")
 mapcmd('<leader>yg', "Telescope live_grep")
@@ -30,6 +36,7 @@ mapcmd('<leader>cE', 'e!')
 mapcmd('<leader>cq', 'q')
 mapcmd('<leader>cQ', 'q!')
 mapcmd('<leader>cx', 'x')
+mapcmd('<f10>', 'q')
 -- w: window
 mapkey('n', '<leader>wh', '<c-w>h')
 mapkey('n', '<leader>wj', '<c-w>j')
@@ -39,7 +46,7 @@ mapkey('n', '<leader>w1', '<c-w>o')
 mapcmd('<leader>wx', 'x')
 mapcmd('<leader>w2', 'sp')
 mapcmd('<leader>w3', 'vs')
--- window resize
+-- windowright resize
 mapkey('n', '<m-9>', '<c-w><')
 mapkey('n', '<m-0>', '<c-w>>')
 mapkey('n', '<m-->', '<c-w>-')
@@ -83,4 +90,5 @@ maplua('<leader>wl', 'print(vim.inspect(vim.lsp.buf.list_workspace_folders()))')
 -- t: terminal
 mapcmd('<leader>tt', 'FloatermToggle')
 mapcmd('<leader>tn', 'FloatermNew')
-
+-- c: code 
+mapcmd('<leader>cf', 'FormatWrite')
