@@ -70,7 +70,9 @@ return require('packer').startup(function()
     -- editor
     use {
 	      'windwp/nvim-autopairs',
-        config = function() require('nvim-autopairs').setup {} end
+        config = function() require('nvim-autopairs').setup {
+          disable_filetype = {}
+        } end
     }
     use 'sbdchd/neoformat'
     use 'mhartington/formatter.nvim'
