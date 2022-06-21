@@ -32,8 +32,9 @@ return require('packer').startup(function()
     use 'kevinhwang91/rnvimr'
 
     -- language
-    use 'neovim/nvim-lspconfig'
-    use 'hrsh7th/cmp-nvim-lsp'
+    use {'neoclide/coc.nvim', branch = 'release'}
+    -- use 'neovim/nvim-lspconfig'
+    -- use 'hrsh7th/cmp-nvim-lsp'
     use 'hrsh7th/cmp-buffer'
     use 'hrsh7th/cmp-path'
     use 'hrsh7th/cmp-cmdline'
@@ -71,7 +72,7 @@ return require('packer').startup(function()
     use {
 	      'windwp/nvim-autopairs',
         config = function() require('nvim-autopairs').setup {
-          disable_filetype = {}
+          disable_filetype = {'vim'}
         } end
     }
     use 'sbdchd/neoformat'
