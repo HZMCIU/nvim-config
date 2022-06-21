@@ -77,5 +77,9 @@ return require('packer').startup(function()
     }
     use 'sbdchd/neoformat'
     use 'mhartington/formatter.nvim'
+
+    -- markdown 
+    use 'godlygeek/tabular'
+    use 'preservim/vim-markdown'
 end)
 
