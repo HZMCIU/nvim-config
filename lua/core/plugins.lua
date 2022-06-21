@@ -42,6 +42,8 @@ return require('packer').startup(function()
     use 'L3MON4D3/LuaSnip'
     use 'nvim-treesitter/nvim-treesitter'
     use 'onsails/lspkind-nvim'
+    use 'SirVer/ultisnips'
+    use 'honza/vim-snippets'
 
     -- git
     use 'airblade/vim-gitgutter' -- TODO: better git integration
