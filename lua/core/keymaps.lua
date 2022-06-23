@@ -92,3 +92,6 @@ mapcmd('<leader>tt', 'FloatermToggle')
 mapcmd('<leader>tn', 'FloatermNew')
 -- c: code 
 mapcmd('<leader>cf', 'FormatWrite')
+
+-- build
+mapcmd('<f4>', 'term make; ./%<')
