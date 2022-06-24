@@ -18,11 +18,13 @@ return require('packer').startup(function()
     -- themes (disabled other themes to optimize startup time)
     use 'sainnhe/sonokai'
     use 'folke/tokyonight.nvim'
---    use 'joshdick/onedark.vim'
---    use { 'catppuccin/nvim', as='catppuccin' }
---    use { 'sonph/onehalf', rtp='vim/' }
---    use 'liuchengxu/space-vim-dark'
---    use 'ahmedabdulrahman/aylin.vim'
+    use { 'altercation/vim-colors-solarized' }
+    use { 'morhetz/gruvbox' }
+--  use 'joshdick/onedark.vim'
+--  use { 'catppuccin/nvim', as='catppuccin' }
+--  use { 'sonph/onehalf', rtp='vim/' }
+--  use 'liuchengxu/space-vim-dark'
+--  use 'ahmedabdulrahman/aylin.vim'
 
     -- file tree
     use {
@@ -71,12 +73,13 @@ return require('packer').startup(function()
     use 'p-z-l/aleph-nvim'
 
     -- editor
-    use {
-	      'windwp/nvim-autopairs',
-        config = function() require('nvim-autopairs').setup {
-          disable_filetype = {'vim'}
-        } end
-    }
+    -- use {
+	  --     'windwp/nvim-autopairs',
+    --     config = function() require('nvim-autopairs').setup {
+    --       disable_filetype = {'vim'}
+    --     } end
+    -- }
+    use { 'jiangmiao/auto-pairs' }
     use 'sbdchd/neoformat'
     use 'mhartington/formatter.nvim'
 

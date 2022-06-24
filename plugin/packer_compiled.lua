@@ -79,6 +79,11 @@ _G.packer_plugins = {
     path = "/home/hzmciu/.local/share/nvim/site/pack/packer/start/aleph-nvim",
     url = "https://github.com/p-z-l/aleph-nvim"
   },
+  ["auto-pairs"] = {
+    loaded = true,
+    path = "/home/hzmciu/.local/share/nvim/site/pack/packer/start/auto-pairs",
+    url = "https://github.com/jiangmiao/auto-pairs"
+  },
   ["bufferline.nvim"] = {
     loaded = true,
     path = "/home/hzmciu/.local/share/nvim/site/pack/packer/start/bufferline.nvim",
@@ -133,12 +138,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/hzmciu/.local/share/nvim/site/pack/packer/start/neoformat",
     url = "https://github.com/sbdchd/neoformat"
-  },
-  ["nvim-autopairs"] = {
-    config = { "\27LJ\2\nd\0\0\4\0\6\0\t6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\4\0005\3\3\0=\3\5\2B\0\2\1K\0\1\0\21disable_filetype\1\0\0\1\2\0\0\bvim\nsetup\19nvim-autopairs\frequire\0" },
-    loaded = true,
-    path = "/home/hzmciu/.local/share/nvim/site/pack/packer/start/nvim-autopairs",
-    url = "https://github.com/windwp/nvim-autopairs"
   },
   ["nvim-cmp"] = {
     loaded = true,
@@ -200,6 +199,11 @@ _G.packer_plugins = {
     path = "/home/hzmciu/.local/share/nvim/site/pack/packer/start/tokyonight.nvim",
     url = "https://github.com/folke/tokyonight.nvim"
   },
+  ultisnips = {
+    loaded = true,
+    path = "/home/hzmciu/.local/share/nvim/site/pack/packer/start/ultisnips",
+    url = "https://github.com/SirVer/ultisnips"
+  },
   ["vim-bbye"] = {
     loaded = true,
     path = "/home/hzmciu/.local/share/nvim/site/pack/packer/start/vim-bbye",
@@ -220,6 +224,11 @@ _G.packer_plugins = {
     path = "/home/hzmciu/.local/share/nvim/site/pack/packer/start/vim-markdown",
     url = "https://github.com/preservim/vim-markdown"
   },
+  ["vim-snippets"] = {
+    loaded = true,
+    path = "/home/hzmciu/.local/share/nvim/site/pack/packer/start/vim-snippets",
+    url = "https://github.com/honza/vim-snippets"
+  },
   ["vim-startuptime"] = {
     loaded = true,
     path = "/home/hzmciu/.local/share/nvim/site/pack/packer/start/vim-startuptime",
@@ -228,10 +237,6 @@ _G.packer_plugins = {
 }
 
 time([[Defining packer_plugins]], false)
--- Config for: nvim-autopairs
-time([[Config for nvim-autopairs]], true)
-try_loadstring("\27LJ\2\nd\0\0\4\0\6\0\t6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\4\0005\3\3\0=\3\5\2B\0\2\1K\0\1\0\21disable_filetype\1\0\0\1\2\0\0\bvim\nsetup\19nvim-autopairs\frequire\0", "config", "nvim-autopairs")
-time([[Config for nvim-autopairs]], false)
 if should_profile then save_profiles() end
 
 end)
