@@ -50,7 +50,6 @@ function M.config()
             return {
               exe = "python3 -m yapf",
               args = {
-                -- "-assume-filename",
                 util.escape_path(util.get_current_buffer_file_name()),
                 -- --style='{based_on_style: pep8, indent_width: 2}'
                 "--style='{based_on_style: google, indent_width: 2}'"
@@ -62,9 +61,20 @@ function M.config()
         json = {
           function()
             return {
-              exe = 'js-beautify',
+              exe = "jq",
+              args = {
+                ".",
+              },
               stdin = true,
-              try_node_modules = true,
+              -- try_node_modules = true,
+            }
+          end
+        },
+        rust = {
+          function()
+            return {
+              exe = "rustfmt",
+              stdin = true,
             }
           end
         }

@@ -20,6 +20,9 @@ return require('packer').startup(function()
     use 'folke/tokyonight.nvim'
     use { 'altercation/vim-colors-solarized' }
     use { 'morhetz/gruvbox' }
+    use { 'flazz/vim-colorschemes'  }
+    use { 'dylanaraps/pywal'  }
+    use { 'rafi/awesome-vim-colorschemes'  }
 --  use 'joshdick/onedark.vim'
 --  use { 'catppuccin/nvim', as='catppuccin' }
 --  use { 'sonph/onehalf', rtp='vim/' }
@@ -46,6 +49,8 @@ return require('packer').startup(function()
     use 'onsails/lspkind-nvim'
     use 'SirVer/ultisnips'
     use 'honza/vim-snippets'
+    use { 'rust-lang/rust.vim' }
+    use { 'fatih/vim-go' }
 
     -- git
     use 'airblade/vim-gitgutter' -- TODO: better git integration
@@ -86,5 +91,7 @@ return require('packer').startup(function()
     -- markdown 
     use 'godlygeek/tabular'
     use 'preservim/vim-markdown'
+    use { 'lervag/vimtex' }
 end)
+
 

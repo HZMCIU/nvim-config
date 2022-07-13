@@ -84,6 +84,11 @@ _G.packer_plugins = {
     path = "/home/hzmciu/.local/share/nvim/site/pack/packer/start/auto-pairs",
     url = "https://github.com/jiangmiao/auto-pairs"
   },
+  ["awesome-vim-colorschemes"] = {
+    loaded = true,
+    path = "/home/hzmciu/.local/share/nvim/site/pack/packer/start/awesome-vim-colorschemes",
+    url = "https://github.com/rafi/awesome-vim-colorschemes"
+  },
   ["bufferline.nvim"] = {
     loaded = true,
     path = "/home/hzmciu/.local/share/nvim/site/pack/packer/start/bufferline.nvim",
@@ -118,6 +123,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/hzmciu/.local/share/nvim/site/pack/packer/start/formatter.nvim",
     url = "https://github.com/mhartington/formatter.nvim"
+  },
+  gruvbox = {
+    loaded = true,
+    path = "/home/hzmciu/.local/share/nvim/site/pack/packer/start/gruvbox",
+    url = "https://github.com/morhetz/gruvbox"
   },
   ["impatient.nvim"] = {
     loaded = true,
@@ -169,10 +179,20 @@ _G.packer_plugins = {
     path = "/home/hzmciu/.local/share/nvim/site/pack/packer/start/plenary.nvim",
     url = "https://github.com/nvim-lua/plenary.nvim"
   },
+  pywal = {
+    loaded = true,
+    path = "/home/hzmciu/.local/share/nvim/site/pack/packer/start/pywal",
+    url = "https://github.com/dylanaraps/pywal"
+  },
   rnvimr = {
     loaded = true,
     path = "/home/hzmciu/.local/share/nvim/site/pack/packer/start/rnvimr",
     url = "https://github.com/kevinhwang91/rnvimr"
+  },
+  ["rust.vim"] = {
+    loaded = true,
+    path = "/home/hzmciu/.local/share/nvim/site/pack/packer/start/rust.vim",
+    url = "https://github.com/rust-lang/rust.vim"
   },
   sonokai = {
     loaded = true,
@@ -209,6 +229,16 @@ _G.packer_plugins = {
     path = "/home/hzmciu/.local/share/nvim/site/pack/packer/start/vim-bbye",
     url = "https://github.com/moll/vim-bbye"
   },
+  ["vim-colors-solarized"] = {
+    loaded = true,
+    path = "/home/hzmciu/.local/share/nvim/site/pack/packer/start/vim-colors-solarized",
+    url = "https://github.com/altercation/vim-colors-solarized"
+  },
+  ["vim-colorschemes"] = {
+    loaded = true,
+    path = "/home/hzmciu/.local/share/nvim/site/pack/packer/start/vim-colorschemes",
+    url = "https://github.com/flazz/vim-colorschemes"
+  },
   ["vim-floaterm"] = {
     loaded = true,
     path = "/home/hzmciu/.local/share/nvim/site/pack/packer/start/vim-floaterm",
@@ -218,6 +248,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/hzmciu/.local/share/nvim/site/pack/packer/start/vim-gitgutter",
     url = "https://github.com/airblade/vim-gitgutter"
+  },
+  ["vim-go"] = {
+    loaded = true,
+    path = "/home/hzmciu/.local/share/nvim/site/pack/packer/start/vim-go",
+    url = "https://github.com/fatih/vim-go"
   },
   ["vim-markdown"] = {
     loaded = true,
@@ -233,6 +268,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/hzmciu/.local/share/nvim/site/pack/packer/start/vim-startuptime",
     url = "https://github.com/dstein64/vim-startuptime"
+  },
+  vimtex = {
+    loaded = true,
+    path = "/home/hzmciu/.local/share/nvim/site/pack/packer/start/vimtex",
+    url = "https://github.com/lervag/vimtex"
   }
 }
 
