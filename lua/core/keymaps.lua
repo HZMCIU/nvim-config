@@ -91,7 +91,12 @@ maplua('<leader>wl', 'print(vim.inspect(vim.lsp.buf.list_workspace_folders()))')
 mapcmd('<leader>tt', 'FloatermToggle')
 mapcmd('<leader>tn', 'FloatermNew')
 -- c: code 
-mapcmd('<leader>cf', 'FormatWrite')
+mapcmd('<leader>cf', 'Neoformat')
+mapcmd('<leader>cb', 'terminal clang++-12 % -o %< -g')
+mapcmd('<leader>cr', 'terminal ./%< < in')
 
 -- build
 mapcmd('<f4>', 'term make; ./%<')
+
+-- git
+mapcmd('<leader>ga', 'term git add .')
