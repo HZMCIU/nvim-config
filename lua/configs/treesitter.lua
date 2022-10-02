@@ -11,5 +11,8 @@ function M.config()
             additional_vim_regex_highlighting = false, -- disable standard vim highlighting
         },
     }
+    
+    vim.opt.foldmethod='expr'
+    vim.opt.foldexpr='nvim_treesitter#foldexpr()'
 end
 return M
