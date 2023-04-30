@@ -6,7 +6,7 @@ return require('packer').startup(function()
     -- starup time optimise
     use 'dstein64/vim-startuptime'
     use 'lewis6991/impatient.nvim'
-    use 'nathom/filetype.nvim'
+    -- use 'nathom/filetype.nvim'
 
     -- buffer
     use {
@@ -92,6 +92,7 @@ return require('packer').startup(function()
     use 'godlygeek/tabular'
     use 'preservim/vim-markdown'
     use { 'lervag/vimtex' }
+    use({ "iamcco/markdown-preview.nvim", run = "cd app && npm install", setup = function() vim.g.mkdp_filetypes = { "markdown" } end, ft = { "markdown" }, })
 end)
 
 

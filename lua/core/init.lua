@@ -1,6 +1,8 @@
 -- basics
+vim.g.do_filetype_lua = true
+vim.g.did_load_filetypes = false
 vim.cmd('syntax on')
-vim.cmd('filetype plugin indent on')
+-- vim.cmd('filetype plugin indent on')
 vim.opt.number          = true
 vim.opt.relativenumber  = true
 vim.opt.termguicolors   = true
