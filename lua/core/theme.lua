@@ -23,5 +23,6 @@ vim.g.tokyonight_sidebars = { "qf", "vista_kind", "terminal", "packer" }
 vim.g.tokyonight_colors = { hint = "orange", error = "#cb5550" }
 --vim.cmd('colorscheme space-vim-dark')
 vim.cmd('colorscheme tokyonight-moon')
-vim.cmd('hi normal guibg=000000')
+--vim.cmd('colorscheme tokyonight-day')
+--vim.cmd('hi normal guibg=000000')
 vim.cmd('set gcr=a:block-blinkon0')
