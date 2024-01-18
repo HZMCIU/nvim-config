@@ -21,8 +21,11 @@ return require('packer').startup(function()
     use { 'altercation/vim-colors-solarized' }
     use { 'morhetz/gruvbox' }
     use { 'flazz/vim-colorschemes'  }
-    use { 'dylanaraps/pywal'  }
     use { 'rafi/awesome-vim-colorschemes'  }
+    use { 'rebelot/kanagawa.nvim' }
+    use { "catppuccin/nvim", as = "catppuccin" }
+    use { "EdenEast/nightfox.nvim" }
+    use { 'navarasu/onedark.nvim' }
 --  use 'joshdick/onedark.vim'
 --  use { 'catppuccin/nvim', as='catppuccin' }
 --  use { 'sonph/onehalf', rtp='vim/' }
