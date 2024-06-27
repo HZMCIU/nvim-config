@@ -36,6 +36,8 @@ mapcmd('<leader>cE', 'e!')
 mapcmd('<leader>cq', 'q')
 mapcmd('<leader>cQ', 'q!')
 mapcmd('<leader>cx', 'x')
+mapcmd('<leader>cn', 'cn')
+mapcmd('<leader>cp', 'cp')
 mapcmd('<f10>', 'q')
 -- w: window
 mapkey('n', '<leader>wh', '<c-w>h')
@@ -90,13 +92,16 @@ maplua('<leader>wl', 'print(vim.inspect(vim.lsp.buf.list_workspace_folders()))')
 -- t: terminal
 mapcmd('<leader>tt', 'FloatermToggle')
 mapcmd('<leader>tn', 'FloatermNew')
+mapcmd('<leader>tv', 'vsplit term://zsh')
+mapcmd('<leader>ts', 'split term://zsh')
+--mapkey('t', '<esc>', '<c-\\><c-n>')
 -- c: code 
 mapcmd('<leader>cf', 'Neoformat')
-mapcmd('<leader>cb', 'terminal clang++-12 % -o %< -g')
-mapcmd('<leader>cr', 'terminal ./%< < in')
+--mapcmd('<leader>cb', 'terminal clang++-12 % -o %< -g')
+--mapcmd('<leader>cr', 'terminal ./%< < in')
 
 -- build
-mapcmd('<f4>', 'term make; ./%<')
+--mapcmd('<f4>', 'term make; ./%<')
 
 -- git
-mapcmd('<leader>ga', 'term git add .')
+--mapcmd('<leader>ga', 'term git add .')

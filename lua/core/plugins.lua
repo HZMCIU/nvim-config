@@ -97,6 +97,9 @@ return require('packer').startup(function()
     use { 'lervag/vimtex' }
     use({ "iamcco/markdown-preview.nvim", run = "cd app && npm install", setup = function() vim.g.mkdp_filetypes = { "markdown" } end, ft = { "markdown" }, })
     use {'lukas-reineke/indent-blankline.nvim'}
+
+    --copilot
+    --use 'github/copilot.vim'
 end)
 
 
