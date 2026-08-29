@@ -1,0 +1,13 @@
+vim.opt.clipboard = { "unnamedplus" }
+vim.opt.number = true
+vim.opt.relativenumber = true
+vim.opt.termguicolors = true
+vim.opt.shiftround = true
+vim.opt.updatetime = 100
+vim.opt.autoindent = true
+vim.opt.tabstop = 2
+vim.opt.shiftwidth = 2
+vim.opt.softtabstop = 2
+vim.opt.expandtab = true
+vim.opt.foldlevel = 10
+vim.opt.conceallevel = 1
